@@ -23,4 +23,5 @@ Implementa a interface alvo (Target) e comunica-se com o Adaptado (Adaptee).
 
 ## Exemplo de Implementação
 https://github.com/gustavokiyatake/Project-Pattern-Adapter/tree/main/Adapter-Pattern/src
+
 https://github.com/gustavokiyatake/Project-Pattern-Adapter/tree/main/Adapter-Pattern1/src
