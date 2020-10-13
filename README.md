@@ -1,19 +1,24 @@
-Singleton Pattern
+#Adapter Pattern
 Objetivo
-O padrão Singleton permite criar objetos únicos para os quais há apenas uma instância. Este padrão oferece um ponto de acesso global, assim como uma variável global, porém sem as desvantagens das variáveis globais. Para entendermos e usarmos bem o padrão de Projeto Singleton é necessário apenas dominar bem as variáveis e métodos de classe estáticos além dos modificadores de acesso.
+O Padrão Adapter converte uma interface de uma classe para outra interface que o cliente espera encontrar. O Adaptador permite que classes com interfaces incompatíveis trabalhem juntas.
 
-Motivação
-O Padrão Singleton tem como definição garantir que uma classe tenha apenas uma instância de si mesma e que forneça um ponto global de acesso a ela. Ou seja, uma classe gerencia a própria instância dela além de evitar que qualquer outra classe crie uma instância dela. Para criar a instancia tem-se que passar pela classe obrigatoriamente, nenhuma outra classe pode instanciar ela. O Padrão Singleton também oferece um ponto global de acesso a sua instância. A própria classe sempre vai oferecer a própria instância dela e caso não tenha ainda uma instância, então ela mesma cria e retorna essa nova instância criada.
+#Motivação
+O padrão Adapter é muito utilizado quando precisamos encaixar uma nova biblioteca de classes, adquirida de um fornecedor, em um sistema de software já existente, porém essas bibliotecas de classe do novo fornecedor são diferentes das bibliotecas de classes do fornecedor antigo. Como não temos o código do novo fornecedor e também não podemos alterá-la, o que pode ser feito é criar uma classe que faça essa adaptação, ou seja, ela é responsável por adaptar a interface do novo fornecedor ao formato que o sistema espera.
 
-Aplicabilidade
-Utilize o padrão Singleton quando uma classe em seu programa deve ter apenas uma instância disponível para todos seus clientes; por exemplo, um objeto de base de dados único compartilhado por diferentes partes do programa.
+#Aplicabilidade
+O Adapter é muito utilizado para compatibilizar o seu sistema a outros frameworks ou APIs.
 
-Estrutura
-structure
+#Estrutura
+![structure](http://videos.web-03.net/artigos/Higor_Medeiros/PadraoAdapter_Java/PadraoAdapter_Java1.jpg)
 
-Participantes
-Classe Singleton declara o método estático getInstance que retorna a mesma instância de sua própria classe.
+#Participantes
+####Client
+Que é quem acessa a interface do Adaptador e a partir desta interface ele fará uma solicitação ao adaptador. 
 
-Construtor da singleton deve ser escondido do código cliente. Chamando o método getInstance deve ser o único modo de obter o objeto singleton.
+####Adaptador
+Implementa a interface alvo (Target) e comunica-se com o Adaptado (Adaptee). 
 
-Exemplo de Implementação
+####Adaptee
+É a nova biblioteca do fornecedor que está sendo inserida no sistema. No exemplo ficará mais clara a função de cada um dos elementos explicitados no diagrama de classes acima.
+
+#Exemplo de Implementação
