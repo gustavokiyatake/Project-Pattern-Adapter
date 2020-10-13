@@ -22,3 +22,5 @@ Implementa a interface alvo (Target) e comunica-se com o Adaptado (Adaptee).
 É a nova biblioteca do fornecedor que está sendo inserida no sistema. No exemplo ficará mais clara a função de cada um dos elementos explicitados no diagrama de classes acima.
 
 ## Exemplo de Implementação
+https://github.com/gustavokiyatake/Project-Pattern-Adapter/tree/main/Adapter-Pattern/src
+https://github.com/gustavokiyatake/Project-Pattern-Adapter/tree/main/Adapter-Pattern1/src
